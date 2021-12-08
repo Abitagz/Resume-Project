@@ -7,20 +7,31 @@
 }
 
 .bg-color-three-reasons {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .bg-color.contact {
-    background-color: #fff;
-
+    background-color: #ffffff;
 }
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -38,6 +49,22 @@
 .ui-menu-color-download {
     background-color: #525252;
 }
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #ffffff;
+    color: #555555;
+}
+
 
 /*----------------------------------------Special padding/margins/text */
 
@@ -107,7 +134,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -116,7 +143,7 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .list-inline-item:not(:last-child) {
@@ -132,7 +159,6 @@ header {
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -145,7 +171,7 @@ header {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     height: 120px;
 }
 
@@ -263,6 +289,7 @@ footer {
     margin-right: 21px;
     padding-top: 2px;
     vertical-align: top;
+    display: inline-block;
 }
 
 .personal-info-item .key p {
@@ -273,6 +300,7 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+    display: inline-block;
 }
 
 /*----------------------------------------Skills */
@@ -366,9 +394,20 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+/*-----------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
 /* ----------------------------------------Media Queries */
 
 @media(min-width: 992px) {
+    .section-column{
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
